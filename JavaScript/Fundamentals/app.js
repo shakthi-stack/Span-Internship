@@ -470,37 +470,39 @@ console.log(square());
 (function (name){
     console.log(name)
 })('sss');
-//-------------------------------------------------------------------
-*/
 
-// alert('error');
-// const p = prompt();
-// alert(p);
+// Window object
 
-// if (confirm('Are you sure')){
-//     console.log('yes');}
+alert('error');
+const p = prompt();
+alert(p);
 
-// val1 = window.outerHeight;
-// val2 = window.innerHeight;
-// console.log(val1);
+if (confirm('Are you sure')){
+    console.log('yes');}
+
+val1 = window.outerHeight;
+val2 = window.innerHeight;
+console.log(val1);
+console.log(val2);
+
+val = window.scrollY;
+console.log(val);
 // console.log(val2);
 
-// val = window.scrollY;
-// console.log(val);
-// // console.log(val2);
+val = window.location;
+val = window.location.href;
+val = window.location.search;
 
-// val = window.location;
-// val = window.location.href;
-// val = window.location.search;
+window.location.href='https://google.com';
+console.log(val);
 
-// window.location.href='https://google.com';
-// console.log(val);
+window.history.go();
+console.log(val);
+val = window.navigator.userAgent;
+val = window.navigator.platform;
+console.log(val);
 
-// window.history.go();
-// console.log(val);
-// val = window.navigator.userAgent;
-// val = window.navigator.platform;
-// console.log(val);
+// var vs const vs let
 
 var a = 1;
 let b = 2;
@@ -523,3 +525,6 @@ for(var a =0;a<10;a++){
 }
 console.log('Global:',a,b,c);
 test();
+//-------------------------------------------------------------------
+*/
+
